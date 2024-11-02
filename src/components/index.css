@@ -1,0 +1,279 @@
+.contact-container { 
+  text-align: center;
+  padding: 2rem;
+  background-color: #fcfcfc;
+}
+
+.contact-content {
+  display: flex;
+  justify-content: space-between;
+  height: 650px;
+  width: 1204px;
+  margin: 0 auto;
+  gap: 2rem;
+  background-color: white;
+  border-radius: 8px;
+  padding: 10px;
+}
+
+.contact-info {
+  background-color: #eae9e9;
+  padding: 1.5rem;
+  border-radius: 10px;
+  width: 490px;
+  height: 647px;
+  text-align: center;
+}
+
+.contact-information {
+  font-size: 32px;
+  font-weight: semi-bold;
+  color: #00004f;
+  padding: 50px;
+}
+
+.information-container {
+  font-size: 1rem;
+  color: #333;
+  margin: 0.5rem 0;
+  text-align: left;
+  padding-top: 45px;
+  padding-left: 49px;
+}
+
+.information {
+  color: #00004f;
+  font-size: 1rem;
+  font-weight: 400;
+  padding-left: 20px;
+  padding-bottom: 50px;
+}
+
+.contact-form {
+  width: 55%;
+  display: flex;
+  flex-direction: column;
+}
+
+.name-fields,
+.email-phone-fields {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.contact-form label {
+  font-weight: bold;
+  font-size: 0.9rem;
+  color: #00004f;
+}
+
+.name {
+  text-align: left;
+  color: #00004f;
+  font-size: 1rem;
+}
+
+.icon {
+  margin-right: 20px;
+}
+
+.name-1 {
+  text-align: left;
+  color: #00004f;
+  font-size: 1rem;
+}
+
+.name-container {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  padding-top: 90px;
+  padding-right: 150px;
+}
+
+.email-container {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  padding-top: 40px;
+  padding-right: 150px;
+}
+
+.underline-input {
+  width: 170% !important;
+  padding: 0.5rem 0;
+  border: none;
+  border-bottom: 1px solid #00004f; /* Underline color */
+  outline: none;
+  transition: border-color 0.3s;
+}
+
+.underline-input-1 {
+  width: 100% !important;
+  padding: 0;
+  border: none;
+  border-bottom: 1px solid #00004f; /* Underline color */
+  outline: none;
+}
+
+/* Underline style for input fields */
+.contact-form input,
+.contact-form textarea {
+  width: 120%;
+  padding: 0.5rem 0;
+  border: none;
+  border-bottom: 1px solid #00004f; /* Underline color */
+  outline: none;
+  transition: border-color 0.3s;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  border-bottom: 1px solid #333; /* Darker color on focus */
+}
+
+.subject-field {
+  margin-bottom: 1rem;
+  text-align: left;
+  padding-top: 40px;
+}
+
+.radio-buttons {
+  display: flex;
+  gap: 0px;
+  padding-top: 20px;
+}
+
+.radio-buttons label {
+  display: flex;
+  align-items: center;
+  padding-left: 0px;
+}
+
+.radio-buttons input[type="radio"] {
+  margin-right: 0.3rem; /* Adjust the spacing here */
+}
+
+.message-field {
+  margin-bottom: 1rem;
+  text-align: left;
+}
+
+.contact-form textarea {
+  height: 18px;
+  resize: none;
+}
+
+.send-message-button {
+  padding: 0.7rem;
+  background-color: white;
+  color: #00004f;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+  height: 69px;
+  width: 179px;
+  box-shadow: 0px 4px 8px 2px rgba(0, 0, 0, 0.15);
+  margin: 30px;
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+}
+
+.send-message-button:hover {
+  background-color: #eae9e9;
+}
+
+.contact-us {
+  font-size: 40px;
+  font-weight: bold;
+  color: #00004f;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.contact-message {
+  font-size: 18px;
+  font-weight: 600;
+  color: #00004f;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Media Queries for Phones and Tablets */
+@media (max-width: 768px) {
+  .contact-content {
+    flex-direction: column; /* Stack elements vertically */
+    height: auto; /* Allow height to adjust */
+    width: auto; /* Auto width */
+  }
+
+  .contact-info {
+    width: 100%; /* Full width for contact info */
+    height: auto; /* Auto height */
+    padding-right: 0; /* Remove padding */
+  }
+
+  .contact-form {
+    width: 100%; /* Full width for form */
+  }
+
+  .name-fields,
+  .email-phone-fields {
+    flex-direction: column; /* Stack fields vertically */
+    gap: 0.5rem; /* Adjust gap for better spacing */
+  }
+
+  .underline-input,
+  .underline-input-1 {
+    width: 90% !important; /* Full width for input fields */
+  }
+
+  .name-container,
+  .email-container {
+    padding-right: 0; /* Remove right padding for small screens */
+    padding-left: 15px; /* Add some left padding */
+  }
+
+  .send-message-button {
+    width: 100%; /* Full width for button */
+    margin: 20px 0; /* Adjust margin */
+  }
+
+  .contact-information {
+    font-size: 24px; /* Adjust font size for smaller screens */
+    padding: 20px; /* Adjust padding */
+  }
+
+  .information-container {
+    padding-left: 15px; /* Adjust left padding for smaller screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .contact-information {
+    font-size: 20px; /* Smaller font size */
+    padding: 10px; /* Adjust padding */
+  }
+
+  .contact-us {
+    font-size: 28px; /* Smaller font size */
+  }
+
+  .contact-message {
+    font-size: 16px; /* Smaller font size */
+  }
+
+  .send-message-button {
+    height: 50px; /* Adjust height */
+    font-size: 16px; /* Adjust font size for button */
+  }
+
+  .underline-input,
+  .underline-input-1 {
+    padding: 0.5rem; /* Increase padding for better touch targets */
+  }
+}
