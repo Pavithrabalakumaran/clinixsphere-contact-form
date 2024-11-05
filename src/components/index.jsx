@@ -1,14 +1,31 @@
 import React from "react";
 import "./index.css";
-
+import { useNavigate } from 'react-router-dom';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faArrowLeft } from '@fortawesome/free-solid-svg-icons';
 import '@fortawesome/fontawesome-free/css/all.min.css';
 
 
 
+
+
 const ContactUs = () => {
+
+  const navigate = useNavigate();
+
+  const handleClick = () => {
+    navigate('/'); // Navigate to the home page
+  };
+
+
   return (
     <div className="contact-container">
+    <div className="arrow-and-heading-container">
+      <button className="arrow-button" onClick={handleClick}>
+      <FontAwesomeIcon icon={faArrowLeft} className="arrow" />
+    </button>
       <h1 className="contact-us">Contact Us</h1>
+    </div>
       <p className="contact-message">Any question or remarks? Just write us a message!</p>
       <div className="contact-content">
         <div className="contact-info">
@@ -47,7 +64,7 @@ const ContactUs = () => {
             </div>
           </div>
           <div className="subject-field">
-            <label>Select Subject:</label>
+            <label>Select Subject?</label>
             <div className="radio-buttons">
               <label>
                 <input type="radio" name="subject" value="general" defaultChecked />
@@ -64,7 +81,7 @@ const ContactUs = () => {
             </div>
           </div>
           <div className="message-field">
-            <label className="name-1">Message</label>
+            <label className="message">Message</label>
             <textarea placeholder="Write your message..." className="underline-input-1" />
           </div>
           <div className="button-container">
